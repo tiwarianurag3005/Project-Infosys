@@ -1,0 +1,99 @@
+NeurofleetX AI Powered Urban Fleet and Traffic Intelligence-Project
+
+Tech Stack (Java Full Stack)
+
+
+Frontend (Web)
+
+React/Angular – fast UI
+
+TailwindCSS – styling
+
+Mapbox GL JS / Leaflet – live maps & layers
+
+Recharts / Apache ECharts – dashboards
+
+WebSocket/SSE client – live vehicle updates
+
+PWA support – offline, installable
+
+
+Backend (Java microservices)
+
+Java 21, Spring Boot 3.x
+
+Spring WebFlux – high-throughput, reactive IO
+
+Spring Data JPA / R2DBC – DB access
+
+Spring Security OAuth2 Resource Server – JWT auth
+
+Resilience4j – circuit breakers, retries
+
+MapStruct – DTO mapping
+
+OpenAPI/Swagger – API docs
+
+
+
+Core Microservices
+
+Device Ingestion Service
+
+MQTT (Eclipse Paho) & REST ingestion
+
+Publishes to Apache Kafka
+
+Geo/Routing Service
+
+GraphHopper (Java routing engine), OSM data
+
+Map-matching, ETA, distance matrices
+
+Fleet Management Service
+
+Vehicles, drivers, shifts, compliance
+
+Dispatch/Optimization Service
+
+Assignment, batching, re-routing
+
+Kafka Streams/Flink for streaming decisions
+
+Traffic Intelligence Service
+
+Congestion detection, incident signals, demand heatmaps
+
+Notification Service
+
+SMS/Email/Push (FCM), WebSocket broadcasts
+
+Reporting Service
+
+KPI aggregation, exports
+
+
+
+Datastores
+
+MySQL  – geospatial storage (routes, zones, geofences)
+
+
+
+ML / Analytics (Java-first)
+
+Tribuo or DeepLearning4J – demand forecasting, ETA models (pure Java)
+
+JPMML/ONNX Runtime Java – serve exported models
+
+(Pragmatic option): Python ML service (FastAPI) behind gRPC/HTTP, called from Java
+
+DevOps / Infra
+
+Docker + Kubernetes (AKS/EKS/GKE/on-prem)
+Helm – deploy charts
+GitHub Actions / Jenkins – CI/CD
+
+
+
+
